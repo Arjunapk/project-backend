@@ -1,0 +1,24 @@
+POST http://localhost:3003/signup/
+Content-Type: application/json
+
+{
+    "username": "apk_arjun",
+    "password": "2112",
+    "name": "Arjun P",
+    "age": 22,
+    "gender": "male"
+}
+###
+
+POST http://localhost:3003/login/
+Content-Type: application/json
+
+{
+    "username": "apk_arjun",
+    "password": "2112"
+}
+###
+
+GET http://localhost:3003/users/
+Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwa19hcmp1biIsImlhdCI6MTY4MzE3MzczOX0.L5SXpAVl1BulMRjNHFBF2ceF8_ZQEqVzKvCp3FoVReU'
+###
